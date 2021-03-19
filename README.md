@@ -1,3 +1,14 @@
+# Task # 1
+
+https://github.com/Intervention/image/issues/1077
+
+Remember your job is to make *incremental* progress, break the task into smaller tasks, or finish something in 15 minutes, then pass it along to the next contributor. 
+No responsibility, only fun.
+
+If you don't finish, add your next task to the readme.md. When you're done make a pull request to the repo
+
+Email with questions
+
 # Intervention Image
 
 Intervention Image is a **PHP image handling and manipulation** library providing an easier and expressive way to create, edit, and compose images. The package includes ServiceProviders and Facades for easy **Laravel** integration.
