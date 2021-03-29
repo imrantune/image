@@ -45,13 +45,14 @@ class ImageManager
     /**
      * Initiates an Image instance from different input types
      *
-     * @param  mixed $data
+     * @param mixed $data
+     * @param ?array  $additionalOptions
      *
      * @return \Intervention\Image\Image
      */
-    public function make($data)
+    public function make($data, $additionalOptions = null)
     {
-        return $this->createDriver()->init($data);
+        return $this->createDriver()->init($data, $additionalOptions);
     }
 
     /**

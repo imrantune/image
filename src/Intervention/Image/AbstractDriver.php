@@ -58,12 +58,14 @@ abstract class AbstractDriver
     /**
      * Initiates new image from given input
      *
-     * @param  mixed $data
+     * @param mixed $data
+     * @param ?array  $additionalOptions
+     *
      * @return \Intervention\Image\Image
      */
-    public function init($data)
+    public function init($data, $additionalOptions = null)
     {
-        return $this->decoder->init($data);
+        return $this->decoder->init($data, $additionalOptions);
     }
 
     /**
