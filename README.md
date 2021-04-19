@@ -1,3 +1,12 @@
+# Task # 2
+TODOs
+* Add testing
+* Extend usage to other methods if they allow options
+* Move key into constant
+* Update documentation
+* Read defaults from config if defined (leave current values as fallback)
+* Define if needed on Commands and how to pass it from CLI
+
 # Task # 1
 
 https://github.com/Intervention/image/issues/1077
@@ -9,13 +18,7 @@ If you don't finish, add your next task to the readme.md. When you're done make 
 
 * Add additionalOptions in the call chain for initUrl as optional
 
-TODOs
-* Add testing
-* Extend usage to other methods if they allow options
-* Move key into constant
-* Update documentation
-* Read defaults from config if defined (leave current values as fallback)
-* Define if needed on Commands and how to pass it from CLI
+
 
 Email with questions
 
