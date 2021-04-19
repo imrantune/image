@@ -48,14 +48,15 @@ class ImageManagerStatic
     /**
      * Statically initiates an Image instance from different input types
      *
-     * @param  mixed $data
+     * @param mixed $data
+     * @param ?array  $additionalOptions
      *
      * @return \Intervention\Image\Image
      * @throws \Intervention\Image\Exception\NotReadableException
      */
-    public static function make($data)
+    public static function make($data, $additionalOptions = null)
     {
-        return self::getManager()->make($data);
+        return self::getManager()->make($data, $additionalOptions);
     }
 
     /**
