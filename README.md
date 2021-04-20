@@ -52,6 +52,10 @@ Intervention Image is a **PHP image handling and manipulation** library providin
 // open an image file
 $img = Image::make('public/foo.jpg');
 
+// you can also pass additional headers options for an url
+$additionalOptions['url_options']['http']['headers'] = "Accept: image/webp";
+$img = Image::make($url, $additionalOptions);
+
 // resize image instance
 $img->resize(320, 240);
 
