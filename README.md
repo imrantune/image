@@ -1,11 +1,15 @@
-# Task # 2
+# Task # ~~2~~ ~~3~~ 4
 TODOs
 * Add testing
-* Extend usage to other methods if they allow options
-* Move key into constant
-* Update documentation
+  - Make a file under tests/ that mocks out to check for the options
+* ~~Extend usage to other methods if they allow options~~ (Out of scope)
+* ~~Move key into constant~~ (Obsolete, removed overcomplexity of a nested array)
+* ~~Update documentation~~
 * Read defaults from config if defined (leave current values as fallback)
+  - Change the options in `Intervention/Image/AbstractDecoder.php`
+    `initFromUrl()` to be optionally set in `config/config.php`.
 * Define if needed on Commands and how to pass it from CLI
+  - Task unclear. Ignore?
 
 # Task # 1
 
@@ -17,8 +21,6 @@ No responsibility, only fun.
 If you don't finish, add your next task to the readme.md. When you're done make a pull request to the repo
 
 * Add additionalOptions in the call chain for initUrl as optional
-
-
 
 Email with questions
 
@@ -53,7 +55,7 @@ Intervention Image is a **PHP image handling and manipulation** library providin
 $img = Image::make('public/foo.jpg');
 
 // you can also pass additional headers options for an url
-$additionalOptions['url_options']['http']['headers'] = "Accept: image/webp";
+$additionalOptions['http']['headers'] = "Accept: image/webp";
 $img = Image::make($url, $additionalOptions);
 
 // resize image instance
