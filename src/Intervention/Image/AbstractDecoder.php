@@ -75,8 +75,8 @@ abstract class AbstractDecoder
           ]
         ];
 
-        if (is_array($additionalOptions) && isset($additionalOptions['url_options'])){
-            $options = array_replace_recursive($options, $additionalOptions['url_options']);
+        if (is_array($additionalOptions)){
+            $options = array_replace_recursive($options, $additionalOptions);
         }
         
         $context  = stream_context_create($options);
